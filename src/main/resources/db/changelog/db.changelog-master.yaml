@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/parking_V001__initial.sql
+  - include:
+      file: db/changelog/changeset/parking_V002__indexes.sql
