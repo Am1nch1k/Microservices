@@ -9,14 +9,12 @@
 
 ## 🏗️ Архитектура проекта
 
-```
 src/main/java/
 ├── 📦 api-gateway/              # API Gateway - единая точка входа
 ├── 📦 config-server/            # Config Server - централизованная конфигурация
 ├── 📦 eureka-server/            # Service Discovery - регистрация и обнаружение сервисов
 ├── 📦 user-service/             # User Service - управление пользователями
 └── 📦 application.yml           # Общие конфигурации
-```
 
 ## 🛠️ Технологический стек
 
