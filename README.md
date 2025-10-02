@@ -24,7 +24,7 @@ src/main/java/
   - Spring Cloud Gateway
   - Eureka Server
   - Config Server
-- **Maven** - управление зависимостями
+- **Gradle** - управление зависимостями
 - **Docker** - контейнеризация
 
 ## 📁 Структура сервисов
@@ -52,38 +52,12 @@ src/main/java/
 
 ## 🚀 Быстрый старт
 
-### Предварительные требования
-- Java 17 или выше
-- Maven 3.6+
-- Git
-
 ### Запуск проекта
 
-1. **Клонируйте репозиторий:**
+ **Клонируйте репозиторий:**
 ```bash
 git clone https://github.com/Am1nch1k/Microservices.git
 cd Microservices
-```
-
-2. **Соберите проект:**
-```bash
-mvn clean install
-```
-
-3. **Запустите сервисы в правильном порядке:**
-
-```bash
-# 1. Запустите Eureka Server
-mvn spring-boot:run -pl eureka-server
-
-# 2. Запустите Config Server
-mvn spring-boot:run -pl config-server
-
-# 3. Запустите User Service
-mvn spring-boot:run -pl user-service
-
-# 4. Запустите API Gateway
-mvn spring-boot:run -pl api-gateway
 ```
 
 ### Порты по умолчанию
@@ -124,10 +98,10 @@ docker-compose up
 
 ```bash
 # Запуск всех тестов
-mvn test
+gradle test
 
 # Запуск тестов конкретного сервиса
-mvn test -pl user-service
+gradle test -pl user-service
 ```
 
 ## 📊 Мониторинг
